@@ -6,4 +6,4 @@ home = Blueprint('home', __name__, static_folder='static')
 @home.route('/')
 def index():
     # users = User.query.all()
-    return render_template('base.html')
+    return render_template('inicio.html', tituloPagina = "Inicio")
